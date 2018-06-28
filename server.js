@@ -1,13 +1,10 @@
 const express = require('express');
 const hbs = require('hbs');
 
-
 var app = express();
 hbs.registerPartials(__dirname+'/views/partials');
-
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname));
-
 hbs.registerHelper('currYear',()=>{
     return new Date().getFullYear();
 });
@@ -34,5 +31,4 @@ app.get('/login',(req,res)=>{
         name:'Surendra'
     });
 });
-
 app.listen(3000);
