@@ -1,0 +1,10 @@
+{
+  "customField": "Custom Field",
+  "otherCustomField": "This field is really cool",
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}
